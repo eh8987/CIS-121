@@ -1,5 +1,6 @@
 #Ethan Haugen
 #Lab 4
+#9/15/2022
 
 #This gets input from the user and sets it to the variable upper.
 upper = int(input("Enter an upper bound for a check: "))
