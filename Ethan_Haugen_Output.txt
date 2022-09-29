@@ -1,0 +1,17 @@
+APPLES
+===================
+ 
+The mean number of apples is 6.11
+The median number of apples is 6
+ 
+BANANAS
+===================
+ 
+The mean number of banana is 5.84
+The median number of banana is 6.0
+ 
+STRAWBERRIES
+===================
+ 
+The mean number of strawberry is 6.08
+The median number of strawberry is 6
