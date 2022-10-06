@@ -9,5 +9,9 @@ def mean(data):
     result = statistics.mean(data)
     return result
 
+def mode(data):
+    result = statistics.mode(data)
+    return result
+
 
 
