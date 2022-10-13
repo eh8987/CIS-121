@@ -103,63 +103,63 @@
 #=======================================================
 
 #10/5
-import random
-from re import L
+# import random
+# from re import L
 
 
-# list = ["2","3","4","5"]
+# # list = ["2","3","4","5"]
 
-# def strtoint(data):
+# # def strtoint(data):
+# #     list = []
+# #     for number in data:
+# #         if number.isdigit:
+# #             list.append(int(number)+5)
+# #     return list
+# # data =strtoint(list)
+
+# # with open("results.txt","w") as f:
+# #     for number in data:
+# #         f.write(str(number)+ "\n")
+
+# #=======================================================
+
+
+# def randomnums():
 #     list = []
-#     for number in data:
-#         if number.isdigit:
-#             list.append(int(number)+5)
+
+#     for i in range (100):
+#         list.append(random.randint(0,100))
+
 #     return list
-# data =strtoint(list)
+
+
+# randomList = randomnums()
 
 # with open("results.txt","w") as f:
-#     for number in data:
-#         f.write(str(number)+ "\n")
+#       for number in randomList:
+#          f.write(str(number)+ "\n")
 
-#=======================================================
+# def listSorter(list):
+#     temp = {}
+#     num = 0
 
-
-def randomnums():
-    list = []
-
-    for i in range (100):
-        list.append(random.randint(0,100))
-
-    return list
-
-
-randomList = randomnums()
-
-with open("results.txt","w") as f:
-      for number in randomList:
-         f.write(str(number)+ "\n")
-
-def listSorter(list):
-    temp = {}
-    num = 0
-
-    for i in range(len(list)+1):
-        for x in list:
-            if i == x:
-                num+=1
-        temp[i]=num
-        num = 0
-    return temp
+#     for i in range(len(list)+1):
+#         for x in list:
+#             if i == x:
+#                 num+=1
+#         temp[i]=num
+#         num = 0
+#     return temp
 
 
-dictionary = listSorter(randomList)
+# dictionary = listSorter(randomList)
 
 
-with open("final.txt","w") as f:
+# with open("final.txt","w") as f:
 
-    for key in dictionary:
+#     for key in dictionary:
         
-        f.write(str(key)+" : " + str(dictionary[key])+"\n")
+#         f.write(str(key)+" : " + str(dictionary[key])+"\n")
     
 
 
@@ -168,3 +168,188 @@ with open("final.txt","w") as f:
 
 # for number in data:
 #     if str(number) in temp:
+
+
+
+
+# #=======================================================
+
+
+# int = 1
+# float = 1.53
+# Boolean = True
+# String = "apu"
+
+# list = [3,56,3,56,6]
+
+
+
+
+# Dictionary = {
+# "list1" : [1,23,45,5],
+# "list2" : [5,4,3,2,1]
+
+# }
+
+
+# Dictionary["list3"] = [1,2,23,4,4]
+
+# print(Dictionary)
+
+
+#=======================================================
+
+
+# list1 = [1,2,3]
+# list2 = ["Number 1","Number 2","Number 3"]
+
+# def listSmasher(list1,list2):
+#     dict = {}
+#     for i in range (len(list2)):
+        
+#         dict[list2[i]]=[list1[i]]
+        
+        
+#     return dict
+# print(listSmasher(list1,list2))
+
+
+#=======================================================
+
+
+
+
+# info = {
+#     "Num 1" : "12",
+#     "Num 2" : "abcs",
+#     "Num 3" : "56"
+
+# }
+
+
+
+
+# x = (int(input(": ")))
+
+# for i in (info):
+#     if info[i].isdigit():
+#         print(info[i])
+
+
+#=======================================================
+# import random
+
+
+# def problem():
+#     temp = {}
+
+#     for i in range(5):
+        
+#         temp[i]=random.randint(0,100)
+#     return temp
+
+
+
+# def problem1(info):
+#     x = 1
+#     y = 0
+#     loop = True
+
+    
+#     while loop == True:
+#         y = random.randint(1,100)
+
+#         for i in info:
+#             if info[i]==y:
+#                 loop = False
+#     print(info)
+#     return y
+    
+# print(problem1(problem()))
+
+#=======================================================
+#=======================================================
+#=======================================================
+
+#10/12
+
+# import random
+
+# def creatlist(x):
+#     temp = []
+#     dict = {}
+#     for n in range(2):
+#         for i in range(x):
+#             temp.append(random.randint(0,100))
+#         dict[n]=temp
+#         temp = []
+#     return dict
+
+
+
+# print(creatlist(5))
+
+#=======================================================
+
+
+# def letterfinder(word):
+#     a = 0
+#     u = 0
+#     dict ={}
+#     for i in word:
+        
+#         if i == "a":
+#             a +=1
+#         if i == "u":
+#             u +=1
+
+#     dict["a"] = a
+#     dict["u"] = u
+
+#     return dict
+
+
+# print(letterfinder("apple"))
+
+
+#=======================================================
+
+# import statistics
+
+# def mile():
+
+#     times = []
+#     dictionary = {}
+#     for i in range(10):
+#         times.append(int(input("Please enter an mile time: ")))
+
+    
+#     dictionary["times"] = times
+#     dictionary["best"] = max(times)
+#     dictionary["worst"] = min(times)
+#     dictionary["average"] = statistics.mean(times)
+
+#     return dictionary
+
+# print(mile())
+
+#=======================================================
+
+# list2 = [1,2,3]
+# list1= ["num1","num2","num3"]
+
+# def problem3(list1,list2):
+    
+#     info = {}
+
+#     for i in range(len(list1)):
+#         info[list1[i]]=list2[i]
+
+#     for i in range(len(list1)):
+#         name ="num" , i +len(list1)
+#         info[name]=(list2[i])*5
+
+
+#     print(info)
+
+# problem3(list1,list2)

@@ -1,7 +1,9 @@
 import statistics
 
 
+
 def median(data):
+    print (data)
     result = statistics.median(data)
     return result
 
@@ -15,3 +17,7 @@ def mode(data):
 
 
 
+def median1():
+    #find the list of apples
+    #put that list into statistics
+    #print it

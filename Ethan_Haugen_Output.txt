@@ -1,6 +1,6 @@
 APPLES
 ===================
  
-The mean number of apples is 6.11
-The median number of apples is 6
+The mean number of apples is 6.39
+The median number of apples is 6.5
 The mode number of apples is 5

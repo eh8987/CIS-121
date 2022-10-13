@@ -5,6 +5,7 @@ import Ethan_Haugen_Stats
 
 file = open("500DayFruitData (1).txt",'r')
 
+print(file)
 
 #Getting the lines and separtings them by /n
 data = file.read().splitlines()
