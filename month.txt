@@ -1,0 +1,14 @@
+Month     | Average Steps
+=======================
+January   | 5246.1
+Febuary   | 6154.46
+March     | 5214.52
+April     | 5068.13
+May       | 4851.2
+June      | 5645.29
+July      | 5550.17
+August    | 4991.23
+September | 4859.19
+October   | 4557.19
+November  | 4291.2
+December  | 4384.58

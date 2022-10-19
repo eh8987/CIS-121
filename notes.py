@@ -353,3 +353,96 @@
 #     print(info)
 
 # problem3(list1,list2)
+
+#=======================================================
+#=======================================================
+
+#=======================================================
+
+
+#10/17
+import random
+
+def file():
+    with open("300nums.txt",'w') as f:
+    
+        for i in range (300):
+
+            num = random.randint(0,200)
+            f.write(
+            
+                str(num) + "\n"
+                
+            )
+def numfinder():
+
+    list = open("300nums.txt","r")
+
+    data = list.read().splitlines()
+
+
+    temp = {}
+    num10 = 0
+    num24 = 0
+    num7 = 0
+    num11 = 0
+    
+
+    for i in data:
+          
+        if int(i) == 10:
+            
+            num10 +=1
+        if int(i) == 24:
+            num24 +=1
+        if int(i) == 7:
+            num7 +=1
+        if int(i) == 11:
+            num11 +=1
+       
+
+    temp["10"]= num10
+    temp["24"]= num24
+
+    temp["7"]= num7
+
+    temp["11"]= num11
+
+    return temp
+def twodicks(dick1,dick2):
+    
+    temp ={}
+    for i in dick1:
+        
+        for x in dick2:
+            if i==x:
+                temp[x] = dick1[i],dick2[x]
+            else:
+                temp[i] = dick1[i]
+                temp[x] = dick2[x]
+    return temp
+
+
+file()
+
+def evenodd():
+     list = open("300nums.txt","r")
+     data = list.read().splitlines()
+
+     print(data)
+     with open("300numsevenodd.txt","w") as f:
+        for i in data:
+            print(i)
+            if int(i)%2==0:
+                
+                    f.write(
+                        str(i) + " : Even" + "\n"
+                    )
+            else:
+                
+                    f.write(
+                        str(i) + " : Odd" + "\n"
+                    )
+
+
+evenodd()
